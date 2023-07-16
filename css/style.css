@@ -55,7 +55,7 @@ body {
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -67,7 +67,6 @@ body {
 .page-header {
   border-bottom: 1px solid var(--cornflower, #e7e9fc);
   background: var(--white, #fff);
-  display: flex;
   height: 72px;
 }
 
@@ -116,35 +115,37 @@ body {
   letter-spacing: 0.02em;
 }
 
-.nav-menu {
+.navigation .logo-link,
+.navigation .nav-menu,
+.navigation .contacts-menu {
   display: inline-flex;
-  align-items: flex-start;
-  margin-left: 72px;
+}
+
+.nav-menu {
+  margin-left: 62px;
+  gap: 40px;
+}
+
+.contacts-menu {
+  margin-left: 100px;
   gap: 40px;
 }
 
 .nav-menu .page:hover,
 .nav-menu .page:focus,
 .nav-menu .page.current,
-.contacts-menu .item:hover,
-.contacts-menu .item:focus {
+.contacts-menu .contact:hover,
+.contacts-menu .contact:focus {
   color: var(--iriscolor);
 }
 
-.contacts-menu .item {
+.contacts-menu .contact {
   color: var(--navyblue);
   font-size: 16px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-}
-
-.contacts-menu {
-  display: inline-flex;
-  align-items: flex-end;
-  gap: 40px;
-  margin-left: 332px;
 }
 
 .bg-hero {
@@ -155,11 +156,12 @@ body {
 .hero-title {
   color: var(--whitecolor);
   font-size: 56px;
-  font-weight: 900;
+  font-weight: 700;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-align: center;
   padding-top: 188px;
+  margin-left: 350px;
 }
 
 .button {
@@ -190,6 +192,7 @@ body {
   font-weight: 500;
   font-size: 16px;
   margin-top: 48px;
+  margin-left: 636px;
   line-height: 1.87;
   letter-spacing: 0.06em;
   padding: 16px 32px;
@@ -236,7 +239,6 @@ body {
 
 .bg-team {
   background-color: var(--cloud);
-  width: 1440px;
   height: 732px;
   flex-shrink: 0;
 }
@@ -271,6 +273,7 @@ body {
   font-weight: 500;
   line-height: 1.19;
   text-align: center;
+  margin-top: 32px;
 }
 
 .team .position {
@@ -279,9 +282,11 @@ body {
   font-weight: 400;
   line-height: 1.19;
   text-align: center;
+  margin-top: 8px;
 }
 
 .team {
+  width: 0 auto;
   margin-top: 72px;
   margin-left: 125px;
   display: flex;
@@ -290,7 +295,7 @@ body {
   gap: 24px;
 }
 
-.team-border {
+.team .item {
   padding: 0 0 32px;
   width: 264px;
   border-radius: 0px 0px 4px 4px;
@@ -315,7 +320,6 @@ body {
 
 .bg-footer {
   background-color: var(--navyblue);
-  width: 1440px;
   height: 312px;
   flex-shrink: 0;
 }
@@ -346,9 +350,20 @@ body {
   margin-left: 427px;
 }
 
+.image {
+  width: 360;
+  height: 300;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 1440px;
+  gap: 24px;
+}
+
 .project {
-  width: 360px;
-  height: 388px;
   text-decoration: none;
 }
 
