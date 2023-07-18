@@ -342,7 +342,7 @@ body {
   margin-bottom: 50px;
 }
 
-.filters.space + .space {
+.filters .space + .space {
   margin-left: 8px;
 }
 
